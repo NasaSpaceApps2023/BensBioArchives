@@ -1,0 +1,4 @@
+FastAPI==0.103.2
+Uvicorn==0.23.2
+Psycopg2-binary==2.9.9
+Openai==0.28.1

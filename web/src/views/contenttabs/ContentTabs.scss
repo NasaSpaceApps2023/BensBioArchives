@@ -1,0 +1,99 @@
+.custom-height {
+    padding: 0.5rem 0 0 0;
+    height: calc(100% - 48px);
+    overflow-y: auto;
+    max-width: 1200px;
+    margin: 0.5rem auto 0 auto;
+
+}
+
+.tab-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.markdown-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.dataset-tb-container {
+    height: calc(100% - 36px);
+    overflow-y: auto;
+}
+
+.models-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.big-ben {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.submit-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    /* Transparent black overlay */
+}
+
+.content-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    background-color: hsl(var(--accent));
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 101;
+}
+
+/* CSS for flex container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Add more styles as needed */
+}
+
+/* CSS for individual card items */
+.card {
+    width: calc(33.333% - 20px);
+    /* 3 cards in a row */
+    margin-bottom: 20px;
+    /* Add additional styling for the card, like padding, border, background, etc. */
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: calc(50% - 20px);
+        /* 2 cards in a row */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: calc(100% - 20px);
+        /* 1 card in a row */
+    }
+}
